@@ -21,9 +21,9 @@ function displayPhotos() {
         item.setAttribute('target', '_blank');
         // Create <img> for photo
         const img = document.createElement('img');
-        item.setAttribute('src', photo.urls.regular);
-        item.setAttribute('alt', photo.alt_description);
-        item.setAttribute('title', photo.alt_description);
+        img.setAttribute('src', photo.urls.regular);
+        img.setAttribute('alt', photo.alt_description);
+        img.setAttribute('title', photo.alt_description);
         // Put <img> inside <a></a> then both inside image container element
         item.appendChild(img);
         imageContainer.appendChild(item);
